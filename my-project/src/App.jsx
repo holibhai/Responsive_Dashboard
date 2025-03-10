@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './components/header/Header'
 
 const App = () => {
+
+  const [darkMode,setDarkMode] =useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  }
   return (
-    <div className='font-quickSand'>
-        <Header/>
+    <div className={`${darkMode && "dark"} font-quickSand`}>
+        <Header toggleDarkMode={toggleDarkMode} darkMode={darkMode}/>
     </div>
   )
 }
