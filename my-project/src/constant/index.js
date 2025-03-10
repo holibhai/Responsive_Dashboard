@@ -25,7 +25,7 @@ import user02 from "assets/user02.png";
 import user03 from "assets/user03.png";
 
 
-export conat links=[
+export const links=[
     {
         href:"#",
         icons:FaChartBar,
